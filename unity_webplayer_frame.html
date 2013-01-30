@@ -1,0 +1,101 @@
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<title>Title</title>
+	<script src="http://code.jquery.com/jquery-1.9.0.min.js"></script>
+	<script type="text/javascript" 
+	src="http://webplayer.unity3d.com/download_webplayer-3.x/3.0/uo/UnityObject.js"></script>
+	<script type="text/javascript">
+	<!--
+	function GetUnity() {
+		if (typeof unityObject != "undefined") {
+			return unityObject.getObjectById("unityPlayer");
+		}
+		return null;
+	}
+	if (typeof unityObject != "undefined") {
+		unityObject.embedUnity("unityPlayer", "unity_webplayer_frame.unity3d", 960, 600);
+		
+	}
+	-->
+	</script>
+
+	<style type="text/css">
+	<!--
+	body {
+		text-align: center;
+	}
+
+	div.content {
+		margin: auto;
+		width: 960px;
+	}
+
+	div#unityPlayer {
+		cursor: default;
+		height: 600px;
+		width: 960px;
+	}
+
+	div#frame {
+		vertical-align:middle;
+		display: table-cell;
+		height: 750px;
+		width: 1200px;
+		background-image: url(1200x750.jpg);
+	}
+	-->
+	</style>
+</head>
+
+<body>
+	<h1>Title</h1>
+
+	<center>
+		<div id="frame">
+			<div class="content">
+				<div id="unityPlayer">
+					<div class="missing">
+						<a href="http://unity3d.com/webplayer/" title="Unity Web Player. Install now!">
+							<img alt="Unity Web Player. Install now!" src="http://webplayer.unity3d.com/installation/getunity.png" width="193" height="63" />
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<br>
+
+		<!-- twitter-button -->
+		<a href="https://twitter.com/share" class="twitter-share-button" id="tweet-button"
+		data-text="" data-lang="en" data-size="large" data-count="none">dummy</a>
+
+		<script>
+		!function(d,s,id){
+			var js,fjs=d.getElementsByTagName(s)[0];
+			if(!d.getElementById(id)){
+				js=d.createElement(s);
+				js.id=id;
+				js.src="http://platform.twitter.com/widgets.js";
+				fjs.parentNode.insertBefore(js,fjs);
+			}
+
+			var url = location.href;
+			var twitter_button = $('#tweet-button');
+			twitter_button.attr('data-text', '[Unity] I recommend this Unity Game! ' + url);
+
+		}(document,"script","twitter-wjs");
+		</script>
+
+	</center>
+</body>
+
+
+
+
+
+
+
+
+
+
+
